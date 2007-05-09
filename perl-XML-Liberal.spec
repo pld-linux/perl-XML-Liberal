@@ -6,7 +6,7 @@
 %define	pdir	XML
 %define	pnam	Liberal
 Summary:	XML::Liberal - Super liberal XML parser that parses broken XML
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	XML::Liberal - bardzo liberalny analizator XML analizujący uszkodzony XML
 Name:		perl-XML-Liberal
 Version:	0.17
 Release:	1
@@ -19,8 +19,8 @@ URL:		http://search.cpan.org/dist/XML-Liberal/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(HTML::Entities::Numbered) >= 0.04
 BuildRequires:	perl-Class-Accessor
+BuildRequires:	perl-HTML-Entities-Numbered >= 0.04
 BuildRequires:	perl-Module-Pluggable-Fast >= 0.16
 BuildRequires:	perl-XML-LibXML >= 1.58
 %endif
@@ -31,8 +31,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 XML::Liberal is a super liberal XML parser that can fix broken XML
 stream and create a DOM node out of it.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+XML::Liberal to bardzo liberalny analizator XML potrafiący naprawić
+uszkodzony strumień XML i utworzyć z niego węzeł DOM.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
