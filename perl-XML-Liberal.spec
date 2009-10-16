@@ -8,13 +8,13 @@
 Summary:	XML::Liberal - Super liberal XML parser that parses broken XML
 Summary(pl.UTF-8):	XML::Liberal - bardzo liberalny analizator XML analizujący uszkodzony XML
 Name:		perl-XML-Liberal
-Version:	0.17
+Version:	0.22
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b05497aac368f46bf08e5a461bbdde0f
+# Source0-md5:	f90276d4080cdf3b4712a3b843a4f9ef
 URL:		http://search.cpan.org/dist/XML-Liberal/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
